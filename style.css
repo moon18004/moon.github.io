@@ -1,0 +1,45 @@
+* { 
+    margin : 0; 
+    box-sizing: border-box; }
+
+body {
+    font-size : 16px;
+    line-height: 32px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: black;
+}
+
+h1{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 0.5rem;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: 1rem;
+    max-width: 50rem;
+    border-radius: 10px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #3A4454;
+    color: white;
+}
+
+header img{
+    width: 20%;
+    float: right;
+}
+
+footer {
+    font-size : 0.75em;
+}
