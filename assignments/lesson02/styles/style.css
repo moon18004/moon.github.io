@@ -77,6 +77,10 @@ main{
     width: 100%;
     border-radius: 10px;
 }
+.description{
+    line-height: 22px;
+    padding: 12px;
+}
 .principle_photo{
     width:100%;
 }
@@ -96,8 +100,19 @@ a{
     padding: 10px;
     border-radius: 10px 10px 0 0;
 }
-#footer{
+footer{
     text-align:center;
+    margin: 0 auto;
+    max-width: 50em;
+    background-color: var(--color-light-green);
+    border-radius: 10px;
+    padding: 6px;
+    
+}
+#lastupdated {
+    display: inline;
+    font-size: 12pt;
+
 }
 
 @media only screen and (max-width: 1000px){
@@ -117,6 +132,9 @@ a{
     .principle3{
         grid-column: auto;
     }
+    footer{
+        border-radius: 0;
+    }
 }
 
 @media only screen and (max-width: 650px){
@@ -126,5 +144,8 @@ a{
     #principles{
         display:grid;
         grid-template-columns: 1fr;
+    }
+    footer{
+        border-radius: 0;
     }
 }
