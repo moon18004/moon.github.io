@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moon">
+    <meta name="description" content="Pink Moon's Wheather">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src = "scripts/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,39 +20,42 @@
             <i class="fas fa-moon"></i>
             <a href="#">Moon</a>
         </div>
-        <div class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">Target Audience</li>
-            <li class="navbar__menu__item">Color Scheme</li>
-            <li class="navbar__menu__item">Typography</li>
-        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item"><a href="index.html">Home</a></li>
+            <li class="navbar__menu__item"><a href="target-audience.html">Target Audience</a></li>
+            <li class="navbar__menu__item"><a href="color-scheme.html">Color Scheme</a></li>
+            <li class="navbar__menu__item"><a href="typography.html">Typography</a></li>
+        </ul>
     </nav>
     <!-- Name -->
     <section id="name">
-        <img src="" alt="">
+        <img src="images/moon_space_icon.png" alt="Logo" class = "name__logo">
         <h1 class="name">Site Name</h1>
         <h1 class="site__name">Pink Moon's Weather</h1>
     </section>
     <!-- Purpose -->
-    <section id="purpose" class ="section section__container">
+    <section id="purpose" class ="section__container">
         <h1>Site Purpose</h1>
-        <p>description</p>
+        <p>To provide as accurate as possible prediction of what the weaher will be like in the near future. They are important to most aspects of day to day life, including aviation, boating, other modes of transportation, farming, tourism, sports, etc.</p>
     </section>
     <!-- Domain Name -->
     <section id="domain">
         <div class="section__container">
             <h1>Domain Name</h1>
-            <h2>URL</h2>
+            <h2>https://www.pinkmoonsweather.com</h2>
         </div>
     </section>
     <!-- footer -->
     <footer>
-        <a href="">1</a>
-        <a href="">1</a>
-        <a href="">3</a>
-        <p>@copy;<span id = "currentYear"></span>Pink Moon's Weather | Moon Moon</p>
+        <div class ="section__container">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <p>&copy;<span id = "currentYear"></span> Pink Moon's Weather | Moon Moon</p>
+            <p>
+                <span id="lastupdated"></span>
+            </p>
+        </div>
     </footer>
-
-
 </body>
 </html>
