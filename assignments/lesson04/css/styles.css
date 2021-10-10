@@ -239,6 +239,10 @@ button{
     .navbar__toggle-btn{
         display: block;
     }
+    .forcasts__item{
+        width: 50px;
+        margin: 5px;
+    }
     .summary{
         padding: 0;
         padding-left :0;
