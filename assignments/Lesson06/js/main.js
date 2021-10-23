@@ -47,3 +47,9 @@ navbarToggleBtn.addEventListener('click', () =>{
 if (date.getDay() == 5){
   document.querySelector('#banner').style.display = 'block';
 }
+
+WebFont.load({
+  google: {
+    families: ['Architects Daughter', 'Indie Flower'],
+  },
+});

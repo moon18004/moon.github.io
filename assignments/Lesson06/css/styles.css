@@ -180,6 +180,7 @@ button{
     padding-left: 10px;
     margin-top: 2px;
     margin-bottom: 0;
+    line-height: 24px;
 }
 .first__section img{
     width: 100%;
