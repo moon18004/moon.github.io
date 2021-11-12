@@ -1,0 +1,65 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color: #98878f;
+}
+h1 {
+    font-size: 40px;
+    background-color: #994c60;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 0 0;
+}
+
+h2 {
+    color: #985e6d;
+    font-family: 'Permanent Marker', cursive;
+}
+
+img {
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+.prophets {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr;
+    margin: 10px;
+
+
+}
+
+article {
+    border: 8px outset silver;
+    text-align: center;
+    margin: 5px;
+    background-color: beige;
+    border-radius: 20px;
+    box-shadow: 4px 8px 4px #985e6d;
+}
+
+footer {
+    background-color: #192231;
+    color: white;
+    padding: 35px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 800px) {
+    .prophets {
+        grid-template-rows: 4fr 4fr 4fr;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .prophets {
+        grid-template-columns: 4fr;
+    }
+}
