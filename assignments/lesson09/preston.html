@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Page</title>
+    <meta name="author" content="Moon">
+    <meta name="description" content="Pink Moon's Wheather">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles/preston.css">
+    <script src = "scripts/preston.js" defer></script>
+    <script src = "scripts/windchill.js" defer></script>
+    
+</head>
+<body>
+    <div id="banner">
+        Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header id = "head">
+        
+        <img src="images/moon_logo.png" alt="Moon logo">
+        <div>
+            <h1>Pink Moon's Weather</h1>
+            <p>The most accurate weather source in the county</p>
+        </div>
+        
+    </header>
+    <nav id="navbar">
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item "><a href="index.html">Home</a></li>
+            <li class="navbar__menu__item active"><a href="preston.html">Preston</a></li>
+            <li class="navbar__menu__item"><a href="#">Soda Springs</a></li>
+            <li class="navbar__menu__item"><a href="#">Fish Heaven</a></li>
+            <li class="navbar__menu__item "><a href="center.html">Storm Center</a></li>
+            <li class="navbar__menu__item "><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main id = "main">
+        <div class="first__section">
+            <h2>Preston Idaho</h2>
+            
+            <aside class="summary">
+                <h2>Weather summary</h2>
+                <p>Currently: Sunny<br>
+                Temperature: <span id="temp">49</span> &#8457;<br>
+                Wind Chill : <span id="wind_chill"></span>&deg;F<br>
+                Humidity: 95%<br>
+                Wind Speed: <span id = "wind_speed">5</span> mph
+                </p>
+            </aside>
+            <picture>
+                <source media = "(max-width: 585px)" srcset = "images/image_500.jpg" />
+                <source media = "(max-width: 885px)" srcset = "images/image_800.jpg" />
+                <img src="images/image_1200.jpg" alt="weather">
+            </picture>
+            
+        </div>
+        <div class="second__section">
+            <h2>Five Day Forecast</h2>
+            <div class="forcasts">
+                <div><img src="images/cloud-showers-heavy-solid.png" alt="" class="forcasts__item">
+                    <p>Monday</p></div>
+                <div><img src="images/cloud-solid.png" alt="" class="forcasts__item">
+                    <p>Tuesday</p></div>
+                <div><img src="images/cloud-sun-rain-solid.png" alt="" class="forcasts__item">
+                    <p>wednesday</p></div>
+                <div><img src="images/cloud-sun-solid.png" alt="" class="forcasts__item">
+                    <p>Thrusday</p></div>
+                <div><img src="images/sun-solid.png" alt="" class="forcasts__item">
+                    <p>Friday</p></div>
+            </div>
+        </div>
+        <div class="last__section">
+            <div class="article">
+                <h2>Article Title</h2>
+                <p>Lorem ipsum dolor sit amet, saepe urbanitas conceptam his eu, ut tantas iracundia deterruisset usu. Mea id erat verear persequeris, latine ceteros reprehendunt pri ea, mel nisl labore sanctus ex. Duo viderer impedit prodesset et. Vim habeo semper te. Illud molestie qualisque ad mel, nam odio vidit virtute id. Nam ea primis omnesque, nec an solum eirmod, cu sed paulo gloriatur. Prima nullam ex sea. Doming insolens ad sed, id deleniti delicata vim. Dicit ridens ex duo, usu ut odio luptatum.</p>
+            </div>
+            <img src="images/temple.jpg" alt="" class = "temple-img">
+        </div>
+    </main>
+    
+    <footer id = "footer">
+        <div class= "information">
+            <img src="images/location.png" alt="" class="location__img">
+            <div class = "contact">
+                <h2>Contact information</h2>
+                <p>
+                    Address<br>
+                    Email><br>
+                    Phone
+                </p>
+                <div class="socials">
+                    <a href="#"><img src="images/facebook-brands.png" alt=""></a>
+                    <a href="#"><img src="images/instagram-square-brands.png" alt=""></a>
+                    <a href="#"><img src="images/twitter-brands.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="date"></div>
+    </footer>
+</body>
+</html>

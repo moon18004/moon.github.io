@@ -101,6 +101,7 @@ button{
     background-color: #ccb9bc;
     border-radius: 0 0 6px 6px;
     min-height: 80px;
+    
 }
 
 .navbar__menu{
@@ -154,54 +155,64 @@ button{
     padding-left: 60px;
 }
 
-#form_center{
-    max-width:1400px;
-    margin: 0 auto;
-    font-family: Indie Flower;
-}
-legend{
-    font-weight: var(--weight-bold);
-    color: #e7407e;
-    font-size: var(--font-medium);
-}
-label{
-    font-size:var(--font-small);
-    font-weight: var(--weight-semi-bold);
-}
-fieldset{
-    display: block;
-    margin: 10px;
-}
-fieldset > label{
-    display:block;
-    margin: 10px;
-}
-#dangers label{
-    margin: 10px;
-    display: block;
-}
-fieldset > label > input{
-    display: block;
-}
-#dangers{
-    font-weight: var(--weight-semi-bold);
-    margin-left: 10px;
-
-}
-#submit{
-    background-color: #e7407e;
-    margin: 10px 0;
-    margin-left: 10px;
-    line-height: 32px;
-    color: white;
+.gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-.thanks{
-    max-width: 1400px;
+.image img{
+    max-width: 300px;
+    border-radius: 10px 10px 0 0;
+}
+.image{
     margin: 0 auto;
-    color: #e7407e;
+    max-width: 300px;
+    background-color: #ccb9bc;
     text-align: center;
+    border-radius: 10px;
+    
 }
+
+.image:hover{
+    box-shadow: 1px 1px 4px 2px gray;
+}
+
+.image p{
+    margin: 5px 10px;
+}
+
+#img1{
+    grid-column: 1/2;
+}
+#img2{
+    grid-column: 2/3;
+}
+#img3{
+    grid-column: 3/4;
+}
+#img4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#img5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#img6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#img7{
+    grid-column: 1/2;
+    grid-row: 3/4
+}
+#img8{
+    grid-column: 2/3;
+    grid-row: 3/4
+}
+
 
 #footer{
     max-width: 1400px;

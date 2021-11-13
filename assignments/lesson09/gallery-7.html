@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Page</title>
+    <meta name="author" content="Moon">
+    <meta name="description" content="Pink Moon's Wheather">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <script src = "scripts/gallery.js" defer></script>
+    <script src = "scripts/windchill.js" defer></script>
+    <script src = "scripts/lazyload.js" defer></script>
+    
+</head>
+<body>
+    <div id="banner">
+        Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header id = "head">
+        
+        <img src="images/moon_logo.png" alt="Moon logo">
+        <div>
+            <h1>Pink Moon's Weather</h1>
+            <p>The most accurate weather source in the county</p>
+        </div>
+        
+    </header>
+    <nav id="navbar">
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item "><a href="index.html">Home</a></li>
+            <li class="navbar__menu__item"><a href="preston.html">Preston</a></li>
+            <li class="navbar__menu__item"><a href="#">Soda Springs</a></li>
+            <li class="navbar__menu__item"><a href="#">Fish Heaven</a></li>
+            <li class="navbar__menu__item "><a href="center.html">Storm Center</a></li>
+            <li class="navbar__menu__item active"><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main id = "main">
+        <h1>Weather Gallery</h1>
+        <div class = "gallery">
+            <div id="img1" class="image">
+                <img src="images/loading.jpg" data-src ="images/art.jpg" alt="art img">
+                <p>Art image</p>
+            </div>
+            <div id="img2" class="image">
+                <img src="images/loading.jpg" data-src ="images/apple.jpg" alt="apple img">
+                <p>Apples image</p>
+            </div>
+            <div id="img3" class="image">
+                <img src="images/loading.jpg" data-src ="images/birds.jpg" alt="bird img">
+                <p>Bird image</p>
+            </div>
+            <div id="img4" class="image">
+                <img src="images/loading.jpg" data-src ="images/cat.jpg" alt="cat img">
+                <p>Cat image</p>
+            </div>
+            <div id="img5" class="image">
+                <img src="images/loading.jpg" data-src ="images/dog.jpg" alt="dog img">
+                <p>Dog image</p>
+            </div>
+            <div id="img6" class="image">
+                <img src="images/loading.jpg" data-src ="images/ctype.jpg" alt="ctype img">
+                <p>Ctype cable image</p>
+            </div>
+            <div id="img7" class="image">
+                <img src="images/loading.jpg" data-src ="images/house.jpg" alt="house">
+                <p>House image</p>
+            </div>
+            <div id="img8" class="image">
+                <img src="images/loading.jpg" data-src ="images/tree.jpg" alt="tree img">
+                <p>Tree image</p>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer id = "footer">
+        <div class= "information">
+            <img src="images/location.png" alt="" class="location__img">
+            <div class = "contact">
+                <h2>Contact information</h2>
+                <p>
+                    Address<br>
+                    Email><br>
+                    Phone
+                </p>
+                <div class="socials">
+                    <a href="#"><img src="images/facebook-brands.png" alt=""></a>
+                    <a href="#"><img src="images/instagram-square-brands.png" alt=""></a>
+                    <a href="#"><img src="images/twitter-brands.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="date"></div>
+    </footer>
+</body>
+</html>

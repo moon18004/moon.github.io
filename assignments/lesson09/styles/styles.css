@@ -1,3 +1,9 @@
+
+
+
+
+
+
 :root{
     /* Color */
     --color-white : #ffffff;
@@ -144,6 +150,28 @@ button{
     
 }
 
+#cards{
+    max-width:1400px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+    margin: 0 auto;
+    
+}
+section{
+    border: solid;
+    border-radius: 10px;
+    text-align: center;
+    flex-shrink: 1;
+}
+#cards img{
+    border-radius: 10px 10px 0 0;
+    width: 100%; 
+}
+
 #main{
     margin: 0 auto;
     max-width: 1400px;
@@ -159,49 +187,7 @@ button{
     margin: 0 auto;
     font-family: Indie Flower;
 }
-legend{
-    font-weight: var(--weight-bold);
-    color: #e7407e;
-    font-size: var(--font-medium);
-}
-label{
-    font-size:var(--font-small);
-    font-weight: var(--weight-semi-bold);
-}
-fieldset{
-    display: block;
-    margin: 10px;
-}
-fieldset > label{
-    display:block;
-    margin: 10px;
-}
-#dangers label{
-    margin: 10px;
-    display: block;
-}
-fieldset > label > input{
-    display: block;
-}
-#dangers{
-    font-weight: var(--weight-semi-bold);
-    margin-left: 10px;
 
-}
-#submit{
-    background-color: #e7407e;
-    margin: 10px 0;
-    margin-left: 10px;
-    line-height: 32px;
-    color: white;
-}
-
-.thanks{
-    max-width: 1400px;
-    margin: 0 auto;
-    color: #e7407e;
-    text-align: center;
-}
 
 #footer{
     max-width: 1400px;
@@ -257,57 +243,37 @@ fieldset > label > input{
         display: block;
     }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr;
+    #cards{
+        display: block;
+    }
+
+    section{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    section h2{
+        margin-top: 30px;
+        line-height: 40px;
+    }
+    section p{
+        line-height: 20px;
+        padding: 5px;
+    }
+    section:nth-of-type(odd) img{
         
+        float: right;
     }
-
-    .image{
-        background-color:white;
+    section:nth-of-type(even) img{
+        
+        float: left;
     }
-    .image:hover{
-        box-shadow: none;
+    #cards img{
+        margin: 10px;
+        width: 45%;
+        height: 40%;
     }
-
-    .image p{
-        display: none;
-    }
-    .image img{
-        border-radius: 10px;
-    }
-    
-    #img1{
-        grid-column: 1/2;
-    }
-    #img2{
-        grid-column: 2/3;
-    }
-    #img3{
-        grid-column: 1/2;
-        grid-row: 2/3
-    }
-    #img4{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    #img5{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    #img6{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    #img7{
-        grid-column: 1/2;
-        grid-row: 5/6
-    }
-    #img8{
-        grid-column: 2/3;
-        grid-row: 5/6
-    }
-    
-
 
     .socials img{
         margin-left: 8px;
@@ -318,7 +284,6 @@ fieldset > label > input{
         width: 200px;
         grid-column: 2/3;
     }
-    
 }
 
 @media only screen and (max-width: 620px){
@@ -331,6 +296,29 @@ fieldset > label > input{
         text-align: center;
         color: #e7407e;
     }
+
+    section h2{
+        margin-top: 10px;
+        line-height: 20x;
+    }
+    section p{
+        line-height: 14px;
+        padding: 0px;
+    }
+    #cards img{
+        width: 90%;
+    }
+
+    section:nth-of-type(odd) img{
+        
+        float: none;
+    }
+    section:nth-of-type(even) img{
+        
+        float: none;
+    }
+
+    
     
     .location__img{
         grid-column: 1/2;
@@ -343,58 +331,7 @@ fieldset > label > input{
         padding-left: 0;
     }
 
-    .gallery {
-        display: inline;
-        
-    }
-    
-
-    .image{
-        background-color:white;
-    }
-
-    .image p{
-        display: none;
-    }
-    .image img{
-        border-radius: 10px;
-        margin: 25px;
-    }
-    .image:hover{
-        box-shadow: none;
-    }
-    
-    #img1{
-        grid-column: 1/2;
-    }
-    #img2{
-        grid-column: 2/3;
-    }
-    #img3{
-        grid-column: 1/2;
-        grid-row: 2/3
-    }
-    #img4{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    #img5{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    #img6{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    #img7{
-        grid-column: 1/2;
-        grid-row: 5/6
-    }
-    #img8{
-        grid-column: 2/3;
-        grid-row: 5/6
-    }
-    
+   
 
     .contact{
         grid-column: 1/2;
