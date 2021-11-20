@@ -1,0 +1,23 @@
+.today{
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    border : 2px solid navy;
+    border-radius: 10px;
+    background-color: pink;
+    
+}
+.futures{
+    margin: 0 auto;
+    max-width: 12000px;
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    
+}
+.day{
+    border: 2px solid navy ;
+    text-align: center;
+    border-radius: 5px;
+    background-color: pink;
+}
