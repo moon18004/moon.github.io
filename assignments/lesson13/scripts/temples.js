@@ -1,7 +1,4 @@
-// function templeData() {
-    
-    // const templeJSON = 'https://moon18004.github.io/moon.github.io/assignments/lesson13/scripts/temples.json';
-    // fetch(templeJSON)
+
     temples = [103, 198, 109, 108];
     temples.forEach((templeid) =>{
         fetch(`https://nathan-byui-api.herokuapp.com/temples/${templeid}`, {
@@ -15,67 +12,20 @@
                 console.log(templeObject);
                 
                 
-            // 208
             
-            // getTempleData(0, "San-diego");
-            // getTempleData(1, "Sapporo");
-            // getTempleData(2, "korea");
-            // getTempleData(3, "dallas");
-
-            //const addressArr = templeObject.address.split(", ");
             let address = templeObject.address1;
-            // for (a = 0; a < addressArr.length; a++){
-            //     address += "<p>"+ addressArr[a] +"</p>";
-            // }
+           
             console.log(address);
 
             let phoneLink = '<a href="tel:'+ templeObject.phone +'">'+ templeObject.phone + '</a>';
 
-            //let service = "<p>" + templeObject.service.rental + "</p><p>" + templeObject.service.cafeteria + "</p><p>" + templeObject.service.housing + "</p><p>" + templeObject.service.discCenter + "</p>";
+            
             let services = templeObject.services;    
             
-            // const ordinancesObject= templeObject.closures;
-
-            // function defineOrdinance (ordinanceArr){
-            //     let ordinanceObj = "";
-            //     for (b = 0; b < ordinanceArr.length; b++){
-            //         ordinanceObj += "<li>" + ordinanceArr[b] + "</li>";
-            //     }
-            //     return ordinanceObj;
-            // };
-
-            // const baptism = defineOrdinance(ordinancesObject.baptism);
-
-            // const endownment = defineOrdinance(ordinancesObject.endownment);
-
-            // const sealing = defineOrdinance(ordinancesObject.sealing);
-
             
-            
-            
-            // for (c = 0; c < templeObject[i].schedule.templeClosures.length; c++){
-            //     templeClosure += "<li>" + templeObject[i].schedule.templeClosures[c] + "</li>";
-            // }
 
             const announced = templeObject.Summary.facts;
-            
-            // const dedicated = '<p><strong>Dedicated:</strong> ' + templeObject.history.dedicated + '</p>';
-            // const groundBreaking = '<p><strong>Ground Breaking:</strong> ' + templeObject.history.groundbreaking + '</p>';
-
-            // if(templeObject.history.rededicated !== undefined){
-            //     let rededicated ="";
-            //     const rededicatedArrLength = templeObject.history.rededicated.length;
-            //     for(r = 0; r < rededicatedArrLength; r++){
-            //         rededicated += '<p><strong>Rededicated:</strong> ' + templeObject.history.rededicated[r] + '</p>';
-            //     }
-            //     const history = announced + groundBreaking + dedicated + rededicated;
-            //     document.querySelector("." + templeName + "-history").innerHTML = history;
-
-            // } else {
-            //     const history = announced + groundBreaking + dedicated;
-            //     document.querySelector("." + templeName + "-history").innerHTML = history;
-
-            // }                
+                   
             let templeNames = templeObject.name.split(' ');
             let templeName = templeNames[0];
             console.log(templeName);
@@ -107,6 +57,3 @@
         });
     })
     
-// };
-
-// templeData();
