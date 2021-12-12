@@ -1,0 +1,55 @@
+h2{
+    color: white;
+  text-align: left;
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  font-size: 1em;
+  padding: 10px;
+  line-height: 1em;
+}
+h3, h4, h5, h6 {
+  color: white;
+  text-align: center;
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  font-size: 2em;
+  padding: 10px;
+  line-height: 1em;
+}
+
+p{
+  padding: 10px;
+  font-size: 23px;
+  line-height: 1.3em;
+  color: #00670e;
+}
+.Grand6, .Grand3, .S5{
+   border: 2px ridge yellow; 
+   color: rosybrown;
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+.leftcol, .rightcol{
+  max-width:48%;
+  flex: 1 0 15em;
+  margin: .5em;
+}
+#Frow, #Frow-Left, footer{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #Frow-Left {
+    background-color: darksalmon;
+    color: #436d70;
+  }
+  
+  #Last{
+    text-align: center;
+  }
+  .pspec{
+    font-size: 22px;
+    font-style: italic;
+    color: #00670e;
+  }

@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/lesson14/images/favicon.ico">
+    <title>Temple Inn & Suites</title>
+    <meta name="description"
+        content="A website that predicts weather conditions in the Preston, Soda springs, and Fish Haven areas.">
+
+    <link rel="stylesheet" href="styles/9small.css">
+    <link rel="stylesheet" href="styles/9normalize.css">
+    <link rel="stylesheet" href="styles/9medium.css">
+    <link rel="stylesheet" href="styles/9large.css">
+    <link rel="stylesheet" href="styles/stlyem.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/temples.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <section id="pancake" class="hidden">
+            <p>Saturday = If you request chocolate cake will be serve to your room.</p>
+
+        </section>
+        <header>
+        <a href="index.html"><img class="logo"
+            src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2FexternalFile.jpg?v=1576390165246"
+            alt="logo"></a>
+        <div class="headertext">
+            <h1>Hotel Del Luna</h1>
+        
+            <div class="subheading">The Best Quaulity Hotel In the World</div>
+        </div>
+        <nav>
+
+            <ul class="navigation">
+                <button type="button" onclick="toggleMenu()">&#9776; Menu</button>
+                <li><a href="index.html" title="About Del Luna">About Del Luna</a></li>
+                <li><a href="temples.html" title="Temples">Temples</a></li>
+                <li><a href="dining.html" title="Dining">Services</a></li>
+                <li><a href="reservation.html" title="Reservation">Reservation</a></li>
+                <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img id="banner" src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2Fpurple-sky-dusk-shooting-star.jpg?v=1576391658441" alt="rafters">
+    </div>
+</header>
+
+
+<main>
+    <section class ="header-img">
+        <div class ="header-img-text-wrap">
+            <h1>
+                Featured Temples
+            </h1>
+        </div>
+    </section>
+    
+    <div class="main-content">            
+        <section class = "temple-container" id = "sandiego">
+            <h2>
+                Idaho Falls Idaho Temple
+            </h2>
+            <div class ="temple-info">
+                <div class = "first-column">
+                    <img src="images/San_Diego_LDS_Temple,_twilight.jpg" alt="San Diego-Temple">
+                    <div class = current-weather>
+                        <h3>
+                            Current Weather
+                        </h3>
+                        <img id ="Idaho-weather-icon" src="images/weather-icon/cloudy.png" alt="cloudy">
+                        <p id="Idaho-current-weather"></p>
+                        <p id="Idaho-current-temp"></p>
+                        <p id="Idaho-high"></p>
+                        <p id="Idaho-low"></p>
+                    </div>
+                </div>
+                
+                <div class = "temple-data">
+                    <h3>
+                        Address
+                    </h3>
+                    <div class = "Idaho-address"></div>
+                    <h3>
+                        Phone Number
+                    </h3>
+                    <div class = "Idaho-phone"></div>
+                    <h3>
+                        Service
+                    </h3>
+                    <div class = "Idaho-service"></div>
+                    
+                    <h3>
+                        Temple Closure
+                    </h3>
+                    <ul class = "Idaho-closure">
+                        
+                    </ul>
+                    <h3>
+                        Temple History
+                    </h3>
+                    <div class = "Idaho-history"></div>
+                </div>
+            </div>
+        </section>
+        <section class = "temple-container" id = "Sapporo">
+            <h2>
+                Rexburg Idaho Temple
+            </h2>
+            <div class ="temple-info">
+                <div class = "first-column">
+                    <img src="images/Sapporo_LDS_Temple_1.jpg" alt="Sapporo-Temple">
+                    <div class = current-weather>
+                        <h3>
+                            Current Weather
+                        </h3>
+                        <img id ="Rexburg-weather-icon">
+                        <p id="Rexburg-current-weather"></p>
+                        <p id="Rexburg-current-temp"></p>
+                        <p id="Rexburg-high"></p>
+                        <p id="Rexburg-low"></p>
+                    </div>
+                </div>
+                <div class = "temple-data">
+                    <h3>
+                        Address
+                    </h3>
+                    <div class = "Rexburg-address"></div>
+                    <h3>
+                        Phone Number
+                    </h3>
+                    <div class = "Rexburg-phone"></div>
+                    <h3>
+                        Service
+                    </h3>
+                    <div class = "Rexburg-service"></div>
+                    
+                    <h3>
+                        Temple Closure
+                    </h3>
+                    <ul class = "Rexburg-closure">
+                        
+                    </ul>
+                    <h3>
+                        Temple History
+                    </h3>
+                    <div class = "Rexburg-history"></div>
+                </div>
+            </div>
+            
+        </section>
+        <section class = "temple-container" id = "seoul">
+            <h2>
+                Oklahoma City Oklahoma Temple
+            </h2>
+            <div class ="temple-info">
+                <div class = "first-column">
+                    <img src="images/Seoul_Korea_Temple.jpg" alt="Korea-Temple">
+                    <div class = current-weather>
+                        <h3>
+                            Current Weather
+                        </h3>
+                        <img id ="Oklahoma-weather-icon">
+                        <p id="Oklahoma-current-weather"></p>
+                        <p id="Oklahoma-current-temp"></p>
+                        <p id="Oklahoma-high"></p>
+                        <p id="Oklahoma-low"></p>
+                    </div>
+                </div>
+                
+                <div class = "temple-data">
+                    <h3>
+                        Address
+                    </h3>
+                    <div class = "Oklahoma-address"></div>
+                    <h3>
+                        Phone Number
+                    </h3>
+                    <div class = "Oklahoma-phone"></div>
+                    <h3>
+                        Service
+                    </h3>
+                    <div class = "Oklahoma-service"></div>
+                    <h3>
+                        Temple Closure
+                    </h3>
+                    <ul class = "Oklahoma-closure">
+                        
+                    </ul>
+                    <h3>
+                        Temple History
+                    </h3>
+                    <div class = "Oklahoma-history"></div>
+                </div>
+            </div>
+            
+        </section>
+        <section class = "temple-container" id = "dallas">
+            <h2>
+                Kansas City Missouri Temple
+            </h2>
+            <div class ="temple-info">
+                <div class = "first-column">
+                    <img src="images/Dallas_LDS_Temple_by_David_B.jpeg" alt="Dallas-Temple">
+                    <div class = current-weather>
+                        <h3>
+                            Current Weather
+                        </h3>
+                        <img id ="Kansas-weather-icon">
+                        <p id="Kansas-current-weather"></p>
+                        <p id="Kansas-current-temp"></p>
+                        <p id="Kansas-high"></p>
+                        <p id="Kansas-low"></p>
+                    </div>
+                </div>
+                <div class = "temple-data">
+                    <h3>
+                        Address
+                    </h3>
+                    <div class = "Kansas-address"></div>
+                    <h3>
+                        Phone Number
+                    </h3>
+                    <div class = "Kansas-phone"></div>
+                    <h3>
+                        Service
+                    </h3>
+                    <div class = "Kansas-service"></div>
+                    
+                    <h3>
+                        Temple Closure
+                    </h3>
+                    <ul class = "Kansas-closure">
+                    </ul>
+
+                    <h3>
+                        Temple History
+                    </h3>
+                    <div class = "Kansas-history"></div>
+                </div>
+            </div>
+            
+        </section>
+        
+    </div>
+</main>
+    <footer>
+        <div class="leftcol">
+            <p>&copy; Moon Moon | BYU-Idaho | WDD 230 <span id="currentDate"></span> </p>
+          </div>
+          
+          <div class="rightcol">
+          <div class="zoomin">
+            <a  class="socialmedia" target="_blank" href="www.facebook.com"><img src="https://cdn.glitch.com/c852da23-70d9-4da6-83eb-4823e3bbe587%2Ffacebook.png?1518559207353" alt="Facebook icon"></a> 
+            <a class="socialmedia" target="_blank" href="www.instagram.com"><img src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2FInstagram-Icon.png?1558219714964" alt="instagram icon" width="65" height="65"></a>
+            <a class="socialmedia" target="_blank" href="www.youtube.com"><img src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2Fytube%20icon.png?1558222821081" alt="Youtube icon" width="65" height="65"></a>
+            </div>  
+          </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/five-day-forecast.js"></script>
+    <!-- <script src="scripts/temples.js"></script> -->
+    <script src="scripts/weather.js"></script>
+
+</body>
+
+</html>

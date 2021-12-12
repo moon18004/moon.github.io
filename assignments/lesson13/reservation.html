@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Hotel Del Luna</title>
+    <meta name="description"
+        content="A website that predicts weather conditions in the Preston, Soda springs, and Fish Haven areas.">
+
+    <link rel="stylesheet" href="styles/8small.css">
+    <link rel="stylesheet" href="styles/8normalize.css">
+    <link rel="stylesheet" href="styles/8medium.css">
+    <link rel="stylesheet" href="styles/8large.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <section id="pancake" class="hidden">
+            <p>Saturday = Preston Pancake in the Park! 9:00 a.m. Saturady at the park.</p>
+
+        </section>
+        <a href="index.html"><img class="logo"
+            src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2FexternalFile.jpg?v=1576390165246"
+            alt="logo"></a>
+        <div class="headertext">
+            <h1>Hotel Del Luna</h1>
+        
+            <div class="subheading">The Best Quaulity Hotel In the World</div>
+        </div>
+
+        <nav>
+
+            <ul class="navigation">
+                <button type="button" onclick="toggleMenu()">&#9776; Menu</button>
+                <li><a href="index.html" title="About Del Luna">About Del Luna</a></li>
+                <li><a href="temples.html" title="Temples">Temples</a></li>
+                <li><a href="dining.html" title="Dining">Services</a></li>
+                <li><a href="reservation.html" title="Reservation">Reservation</a></li>
+                <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img id="banner" src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2Fpurple-sky-dusk-shooting-star.jpg?v=1576391658441" alt="rafters">
+        
+
+        <main>
+            <h1>
+                Reservation
+            </h1>
+        </div>
+    </section>
+<div class="main-content">
+    <section class = "reservation-form-container">
+        <form action="thanks.html" method="GET">
+            <p>* are required fields.</p>
+            <h2>Your Information</h2>
+            <div>
+                <label for="fullName">Full Name* </label>
+                <input type="text" id="fullName" name="fullName" required pattern ="[A-Za-z ]{5,}">
+            </div>
+            <div>
+                <label for="email">Email* </label>
+                <input type="email" id="email" name="email" placeholder="user@email.com" required>
+            </div>
+            <div>
+                <label for="phone">Phone </label>
+                <input type="tel" id="phone" name="phone" >
+            </div>
+            <div>
+                <label for="homeState">Home State </label>
+                <input type="text" id="homeState" name="homeState">
+            </div>
+            <div>
+                <label for="homeCountry">Home Country* </label>
+                <input type="text" id="homeCountry" name="homeCountry" required>
+            </div>
+
+            <h2>Reservation</h2>
+            <div>
+                <label for="dateFrom">Start Date* </label>
+                <input type="date" id="dateFrom" name="dateFrom">
+            </div>
+            <div>
+                <label for="dateTo">End Date* </label>
+                <input type="date" id="dateTo" name="dateTo" required>
+            </div> 
+            <p>Your check-in time is at 12pm of the date chosen or later.</p>
+            <p>Your check-out time is before 2pm of the date chosen or earlier.</p>
+
+            <div>
+                <label for="location">Location:* </label>
+                <select name="location" id="location" required>
+                    <option selected disabled>Select Hotel Location ...</option>
+                    <option value="Barranquilla, Colombia">Barranquilla, Colombia</option>                            
+                    <option value="Laie, Hawaii">Laie, Hawaii, USA</option>
+                    <option value="Logan, Utah">Logan, Utah, USA</option>
+                    <option value="London, England">London, England</option>
+                    <option value="Manila,Philippines">Manila Philippines</option>
+                    <option value="Melbourne, Australia">Melbourne, Australia</option>
+                    <option value="Nauvoo, Illinois">Nauvoo, Illinois</option>
+                    <option value="Rome, Italy">Rome, Italy</option>
+                    <option value="Salt Lake City, Utah">Salt Lake City, Utah, USA</option>
+                    <option value="Seoul, Korea">Seoul, Korea</option>
+                    <option value="Tokyo, Japan">Tokyo, Japan</option>
+                </select>                    
+            </div>
+            <h2>Add room</h2>
+            <div id = "guest-room-form">
+                <div class = "roomType-container">
+                    <label for="roomType">Room Type:* </label>
+                    <select required name="roomType" id="roomType">
+                        <option selected disabled>Select Room Type ...</option>
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                        <option value="Studio">Studio</option>
+                        <option value="Mini-Suite">Mini-Suite</option>
+                        <option value="Master Suite">Master Suite</option>
+                        <option value="Apostle Suite">Apostle Suite</option>
+                    </select>                    
+                </div>
+                <div>
+                    <label for="guestAdult">Adult Guests in Room:* </label>
+                    <select required name="guestAdult" id="guestAdult">
+                        <option value = "" disabled></option>
+                        <option value = "0">0</option>
+                        <option value = "1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                        <option value ="5">5</option>
+                        <option value ="6">6</option>
+                        <option value ="7">7</option>
+                        <option value ="8">8</option>
+                        <option value ="9">9</option>
+                        <option value ="10">10</option>
+                    </select>
+                                   
+                </div>
+                <div>
+                    <label for="guestChildren">Chilren Guests in Room:* </label>
+                    <select required name="guestChildren" id="guestChildren">
+                        <option value = "" disabled></option>
+                        <option value = "0">0</option>
+                        <option value = "1">1</option>
+                        <option value ="2">2</option>
+                        <option value ="3">3</option>
+                        <option value ="4">4</option>
+                        <option value ="5">5</option>
+                        <option value ="6">6</option>
+                        <option value ="7">7</option>
+                        <option value ="8">8</option>
+                        <option value ="9">9</option>
+                        <option value ="10">10</option>
+                    </select>              
+                </div>
+                <div>
+                    <input class = "add_room" type="button" value="Add room">
+                </div>
+                
+            </div>
+            <div id = "room-selection">
+                <!-- <div id="roomitem-%id%" class = "room-item">
+                    <p>1 x <span class ="room-type-display">Master Suite</span> with <span class = "people-display">1 adult & 3 children</span>.</p>
+                    <button class="btn"><i class="fa fa-close"></i></button>
+                </div> -->
+            
+            </div>
+            <div>
+                <label for="comments">Comments/Special Accommodations:</label>
+                <textarea rows="5"></textarea>                
+            </div>
+                <div class="button">
+                    <input type="submit" value="Submit" title="DONE!!!!">
+                    <input type="reset" class="resetbutton" value="Reset" title="WARNING!!!">
+                </div>
+            
+        </form>
+            <br>
+</div>
+        </main>
+
+        <footer>
+                
+            <div class="leftcol">
+                <p>&copy; Moon Moon | BYU-Idaho | WDD 230 <span id="currentDate"></span> </p>
+              </div>
+              
+              <div class="rightcol">
+              <div class="zoomin">
+                <a  class="socialmedia" target="_blank" href="www.facebook.com"><img src="https://cdn.glitch.com/c852da23-70d9-4da6-83eb-4823e3bbe587%2Ffacebook.png?1518559207353" alt="Facebook icon"></a> 
+                <a class="socialmedia" target="_blank" href="www.instagram.com"><img src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2FInstagram-Icon.png?1558219714964" alt="instagram icon" width="65" height="65"></a>
+                <a class="socialmedia" target="_blank" href="www.youtube.com"><img src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2Fytube%20icon.png?1558222821081" alt="Youtube icon" width="65" height="65"></a>
+                </div>  
+              </div>
+</footer>
+
+
+            <script src="scripts/lazyload.js"></script>
+            <script src="scripts/menu.js"></script>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/forecast.js"></script>
+            <script src="scripts/windchill.js"></script>
+            <script src="scripts/adjustRating.js"></script>
+            <script src="scripts/room-selection.js"></script>
+
+</body>
+</header>
+
+
+</html>

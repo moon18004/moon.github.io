@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/lesson14/images/favicon.ico">
+    <title>Temple Inn & Suites</title>
+    <meta name="description"
+        content="A website that predicts weather conditions in the Preston, Soda springs, and Fish Haven areas.">
+
+    <link rel="stylesheet" href="styles/9small.css">
+    <link rel="stylesheet" href="styles/9normalize.css">
+    <link rel="stylesheet" href="styles/9medium.css">
+    <link rel="stylesheet" href="styles/9large.css">
+    <link rel="stylesheet" href="styles/stlyem.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <section id="pancake" class="hidden">
+            <p>Saturday = If you request chocolate cake will be serve to your room.</p>
+
+        </section>
+        <header>
+        <a href="index.html"><img class="logo"
+            src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2FexternalFile.jpg?v=1576390165246"
+            alt="logo"></a>
+        <div class="headertext">
+            <h1>Hotel Del Luna</h1>
+        
+            <div class="subheading">The Best Quaulity Hotel In the World</div>
+        </div>
+        <nav>
+
+            <ul class="navigation">
+                <button type="button" onclick="toggleMenu()">&#9776; Menu</button>
+                <li><a href="index.html" title="About Del Luna">About Del Luna</a></li>
+                <li><a href="temples.html" title="Temples">Temples</a></li>
+                <li><a href="dining.html" title="Dining">Services</a></li>
+                <li><a href="reservation.html" title="Reservation">Reservation</a></li>
+                <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img id="banner" src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2Fpurple-sky-dusk-shooting-star.jpg?v=1576391658441" alt="rafters">
+    </div>
+</header>
+
+
+    <main>
+        <input type="hidden" id="cityID" value="5607916">
+        <br>
+        <h2>Need More Help?</h2>
+        <div class="main-content">
+                
+            <div class = "contact-form-wrapper">
+                <h3>
+                    Send Us An Email!
+                </h3>
+                <form action="thanks.html" method="GET">
+                    <p>* are required fields.</p>
+                    <div>
+                        <label for="fullName">Your Full Name* </label>
+                        <input type="text" id="fullName" name="fullName" required pattern ="[A-Za-z ]{5,}">
+                    </div>
+                    <div>
+                        <label for="email">Your Email* </label>
+                        <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                    </div>
+                    <div>
+                        <label for="comments">Inquiry:*</label>
+                        <textarea rows="10" required></textarea>                
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>  
+            </div>
+            <div class = "map">
+                <h2>
+                    Our Headquarter Location
+                </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576211421142!5m2!1sen!2sus" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+            </div>                
+        </div>
+    </main>
+    <footer>
+        <div class="leftcol">
+            <p>&copy; Moon Moon | BYU-Idaho | WDD 230 <span id="currentDate"></span> </p>
+          </div>
+          
+          <div class="rightcol">
+          <div class="zoomin">
+            <a  class="socialmedia" target="_blank" href="www.facebook.com"><img src="https://cdn.glitch.com/c852da23-70d9-4da6-83eb-4823e3bbe587%2Ffacebook.png?1518559207353" alt="Facebook icon"></a> 
+            <a class="socialmedia" target="_blank" href="www.instagram.com"><img src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2FInstagram-Icon.png?1558219714964" alt="instagram icon" width="65" height="65"></a>
+            <a class="socialmedia" target="_blank" href="www.youtube.com"><img src="https://cdn.glitch.com/97522a9d-7cd2-46e9-ac69-6f82629379d1%2Fytube%20icon.png?1558222821081" alt="Youtube icon" width="65" height="65"></a>
+            </div>  
+          </div>
+        </div>
+
+    </footer>
+
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/five-day-forecast.js"></script>
+    <script src="scripts/temples.js"></script>
+
+</body>
+
+</html>
